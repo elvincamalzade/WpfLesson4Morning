@@ -60,7 +60,7 @@ namespace WpfLesson4
         {
             InitializeComponent();
 
-            listBox.ItemsSource = GetCars();
+            //listBox.ItemsSource = GetCars();
 
         }
 
@@ -84,6 +84,33 @@ namespace WpfLesson4
         {
         //    txtBlock1.Text = Convert.ToInt32(slider.Value).ToString();
         //    txtBlock2.Text = Convert.ToInt32(slider.Value).ToString();
+        }
+
+        private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //var car = listBox.SelectedItem as Car;
+            //   MessageBox.Show(car.Model);
+
+            //modelTxtb.Text = $"Model : {car.Model}";
+            //vendorTxtb.Text = $"Vendor : {car.Vendor}";
+            //yearTxtb.Text = $"Year : {car.Year}";
+
+
+
+
+
+            //modelTxtb.Text = $"Model : ";
+            //vendorTxtb.Text = $"Vendor : ";
+            //yearTxtb.Text = $"Year : ";
+            //var cars = listBox.SelectedItems;
+            //foreach (var item in cars)
+            //{
+            //    var car = item as Car;
+            //    modelTxtb.Text += car.Model+" ";
+            //    vendorTxtb.Text += car.Vendor + " ";
+            //    yearTxtb.Text += car.Year.ToString() + " ";
+            //}
+
         }
     }
 }

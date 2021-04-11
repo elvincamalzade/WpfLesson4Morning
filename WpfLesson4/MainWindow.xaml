@@ -99,27 +99,29 @@
 
 
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*" />
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
             <ColumnDefinition Width="2*"/>
-        </Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>-->
 
-        <ListBox
+        <!--<ListBox
+            SelectionMode="Multiple"
             Name="listBox" 
             ScrollViewer.VerticalScrollBarVisibility="Auto"
             Background="Bisque"
             FontSize="30"
             FontWeight="DemiBold"
             DisplayMemberPath="Model"
+            SelectionChanged="listBox_SelectionChanged"
             >
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <!--<WrapPanel></WrapPanel>-->
+                    --><!--<WrapPanel></WrapPanel>--><!--
                     <VirtualizingStackPanel></VirtualizingStackPanel>
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
-            
-            <!--<Button FontSize="25" >Click Me</Button>
+
+            --><!--<Button FontSize="25" >Click Me</Button>
             <Expander></Expander>
             <sys:DateTime>12/04/2019</sys:DateTime>
             <sys:DateTime>12/04/2019</sys:DateTime>
@@ -127,8 +129,151 @@
             <sys:DateTime>8/06/2015</sys:DateTime>
             <sys:DateTime>8/06/2015</sys:DateTime>
             <sys:DateTime>8/06/2015</sys:DateTime>
-            <sys:DateTime>8/06/2015</sys:DateTime>-->
-        </ListBox>
+            <sys:DateTime>8/06/2015</sys:DateTime>--><!--
+        </ListBox>-->
+
+        <!--<StackPanel Grid.Column="1">
+            <StackPanel.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#FEAC5E" Offset="0" ></GradientStop>
+                    <GradientStop Color="#C779D0" Offset="0.7" ></GradientStop>
+                    <GradientStop Color="#4BC0C8" Offset="1" ></GradientStop>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+
+            <StackPanel Margin="15">
+                <TextBlock Margin="10"  Name="modelTxtb" Text="Model" FontSize="22" FontWeight="DemiBold"></TextBlock>
+                <TextBlock Margin="10" Name="vendorTxtb" Text="Vendor" FontSize="22" FontWeight="DemiBold"></TextBlock>
+                <TextBlock Margin="10" Name="yearTxtb" Text="Year" FontSize="22" FontWeight="DemiBold"></TextBlock>
+            </StackPanel>
+            
+            
+        </StackPanel>-->
+
+        <!--<StackPanel Grid.Column="1" Background="LightGoldenrodYellow">
+            --><!-- <Border Margin="25" Height="56" BorderBrush="SpringGreen" BorderThickness="6">
+                
+            <ComboBox Background="Azure" Height="50"  >
+                    <ComboBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            -->
+            <!--<WrapPanel></WrapPanel>-->
+            <!--
+                            <VirtualizingStackPanel></VirtualizingStackPanel>
+                        </ItemsPanelTemplate>
+                    </ComboBox.ItemsPanel>
+                    <Button>Salam</Button>
+                    <RadioButton></RadioButton>
+                    <CheckBox></CheckBox>
+                    <ProgressBar Value="50" Minimum="0" Maximum="100" Height="20" Width="250" ></ProgressBar>
+                    <Slider Value="50" Minimum="0" Maximum="100" ></Slider>
+                
+                
+            </ComboBox>
+                
+            </Border>--><!--
+
+            <ComboBox Height="30" Margin="20">
+
+                <ComboBoxItem Background="Gold" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="mario.png" Width="100" Height="100"></Image>
+                        <TextBlock 
+                            Text="Super Mario"
+                            TextAlignment="Center"
+                            VerticalAlignment="Center"
+                            Width="200"
+                            FontSize="30"
+                            FontWeight="ExtraBlack"
+                            FontFamily="Comic Sans MS"
+                            ></TextBlock>
+                        <Button Width="50" Margin="15" Content="A" FontSize="30" ></Button>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="SpringGreen" >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="mario.png" Width="100" Height="100"></Image>
+                        <TextBlock 
+                            Text="Super Mario"
+                            TextAlignment="Center"
+                            VerticalAlignment="Center"
+                            Width="200"
+                            FontSize="30"
+                            FontWeight="ExtraBlack"
+                            FontFamily="Comic Sans MS"
+                            ></TextBlock>
+                        <Button Width="50" Margin="15" Content="A" FontSize="30" ></Button>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="DeepPink">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="mario.png" Width="100" Height="100"></Image>
+                        <TextBlock 
+                            Text="Super Mario"
+                            TextAlignment="Center"
+                            VerticalAlignment="Center"
+                            Width="200"
+                            FontSize="30"
+                            FontWeight="ExtraBlack"
+                            FontFamily="Comic Sans MS"
+                            ></TextBlock>
+                        <Button Width="50" Margin="15" Content="A" FontSize="30" ></Button>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Background="DeepPink">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="mario.png" Width="100" Height="100"></Image>
+                        <TextBlock 
+                            Text="Super Mario"
+                            TextAlignment="Center"
+                            VerticalAlignment="Center"
+                            Width="200"
+                            FontSize="30"
+                            FontWeight="ExtraBlack"
+                            FontFamily="Comic Sans MS"
+                            ></TextBlock>
+                        <Button Width="50" Margin="15" Content="A" FontSize="30" ></Button>
+                    </StackPanel>
+                </ComboBoxItem>
+
+
+            </ComboBox>
+
+
+
+
+        </StackPanel>-->
+
+
+        <TabControl>
+            <TabItem  Padding="15" Header="Home" FontSize="22" FontFamily="Georgia" FontWeight="ExtraBlack" >
+                <Grid Background="DeepPink" >
+                    <TextBlock>Home</TextBlock>
+                </Grid>
+                
+            </TabItem>
+            <TabItem Padding="15" Header="About" FontSize="22" FontFamily="Georgia" FontWeight="ExtraBlack" >
+
+                <Grid Background="FloralWhite" >
+                    <TextBlock>About</TextBlock>
+                </Grid>
+
+            </TabItem>
+            <TabItem Padding="15" Header="News" FontSize="22" FontFamily="Georgia" FontWeight="ExtraBlack" >
+
+                <Grid Background="DeepSkyBlue" >
+                    <TextBlock>News</TextBlock>
+                </Grid>
+
+            </TabItem>
+            <TabItem Padding="15" Header="Contact" FontSize="22" FontFamily="Georgia" FontWeight="ExtraBlack" >
+                <Grid Background="MediumVioletRed" >
+                    <TextBlock>Contact</TextBlock>
+                </Grid>
+                
+            </TabItem>
+        </TabControl>
+        
         
     </Grid>
 </Window>
